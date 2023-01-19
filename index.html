@@ -8,6 +8,70 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="section">
+        <div class="container">
+            <div class="allform">
+                <h2>Форма регистрации участников конференции</h2>
+                <form id="input_base" name="input_base" action="#" method="get">
+                    <div class="allctnt">
+                        <div class="form_inputs">
+                            <div class="leftside">
+                                <div class="second_name leftside_ipt">
+                                    <label class="label_mgn" for="second_name">Фамилия</label>
+                                    <input type="text" pattern="^[А-Яа-яЁё\s]+$" name="second_name" id="second_name" required>
+                                </div>
+                                <div class="first_name leftside_ipt top">
+                                    <label class="label_mgn" for="first_name">Имя</label>
+                                    <input type="text" pattern="^[А-Яа-яЁё\s]+$" name="first_name" id="first_name" required>
+                                </div>
+                                <div class="father_name leftside_ipt">
+                                    <label class="label_mgn" for="father_name">Отчество</label>
+                                    <input type="text" pattern="^[А-Яа-яЁё\s]+$" name="father_name" id="father_name" required>
+                                </div>
+                                <div class="tel leftside_ipt">
+                                    <label class="label_mgn" for="tel">Телефон</label>
+                                    <input id="phone-mask" name="tel" type="tel" required>
+                                    <span class="validity"></span>
+                                </div>
+                                <div class="email leftside_ipt">
+                                    <label class="label_mgn" for="email">Email</label>
+                                    <input id="email" type="email" required>
+                                </div>
+                                <div class="date_bth leftside_ipt bottom">
+                                    <label class="date_width label_mgn" for="date_bth">Дата рождения</label>
+                                    <input id="date" type="date">
+                                </div>
+                            </div>
+                            <div class="rightside">
+                                <div class="s_s_div">
+                                    <label class="s_s_label" for="s_s_label">Выберите предмет</label>
+                                    <select class="s_s_slct" name="s_s_slct" id="s_s_slct">
+                                        <option value="Математика">Математика</option>
+                                        <option value="Физика">Физика</option>
+                                        <option value="Информатика">Информатика</option>
+                                    </select>
+                                </div>
+                                <div class="exist_report">
+                                    <label for="ext_rpt">Наличие доклада</label>
+                                    <label class="checkbox-google">
+                                        <input id="checkbox_google_red" class="checkbox_google_red" type="checkbox">
+                                        <span class="checkbox-google-switch"></span>
+                                    </label>
+                                </div>
+                                <div class="themeofrep_div leftside_ipt">
+                                    <label class="themeofrep" for="themeofrep">Тема доклада</label>
+                                    <input name="themeofrep" id="themeofrep" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <input class="btn_send" type="submit" value="Отправить" id="submitBtn"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="/js/jquery-3.6.3.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://unpkg.com/imask"></script>
 </html>
