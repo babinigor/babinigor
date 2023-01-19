@@ -223,7 +223,11 @@ span{
 	font-weight: normal;
 }
 
-
+.allcontent_raport{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 
 /* GOOGLE CHECKBOX */
