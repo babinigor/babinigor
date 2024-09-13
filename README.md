@@ -1,7 +1,7 @@
 Hi 👋 My name is Igor Babin
 ===========================
 
-Front-end developer | JavaScript | Vue | HTML & CSS |
+Front-end developer | JavaScript | React | HTML & CSS |
 -----------------------------------------------------
 
 * 🌍  I'm based in Moscow
